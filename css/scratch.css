@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: royalblue;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.mainContent {
+    padding: 20px;
+    position: relative;
+
+}
+
+.container {
+    background-color: #ffffff;
+    /* White background for the content box */
+    color: #003b5c;
+    /* Navy blue text for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    width: 95%;
+    /* Allow the container to take up 80% of the width */
+    display: flex;
+    /* Use Flexbox for layout */
+    justify-content: space-between;
+    /* Space out the items with space between */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    /* Ensure the container takes at least full viewport height */
+    margin: 0 auto;
+    /* Prevent it from growing too large */
+}
+
+.container .text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* The text section takes 60% of the container width */
+}
+
+.container .image {
+    width: 35%;
+    /* The image section takes 35% of the container width */
+}
+
+.container img {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Keep the aspect ratio intact */
+}
+
+.container h2 {
+    width: 100%;
+    text-align: center;
+    /* Align header to the left */
+    font-size: 32px;
+    /* Slightly larger font size */
+    font-weight: bold;
+    color: #003b5c;
+    /* Navy blue color for the heading */
+    margin-top: 0px;
+
+    /* Space below the heading */
+
+}
+
+
+
+.text ul {
+    margin-top: 0;
+    /* Remove margin from the nested unordered list */
+    padding-left: 20px;
+    /* Indent nested list */
+}
+
+ol {
+    padding-left: 20px;
+    /* Indentation for ordered list */
+    font-size: 20px;
+    /* Set font size for readability */
+    line-height: 1.6;
+    width: 50%;
+    margin-top: 30px;
+
+
+    /* Increased line height for better spacing */
+}
+
+ol li {
+    margin-bottom: 15px;
+    /* Space between list items */
+}
+
+ul {
+    margin-top: 10px;
+    /* Space before the unordered list */
+    padding-left: 20px;
+    /* Indentation for unordered list */
+}
+
+ul li {
+    font-size: 16px;
+    /* Slightly smaller font size for sublist items */
+    margin-bottom: 10px;
+}
+
+ol li ul li {
+    color: #003b5c;
+    /* BYU gold for sublist items */
+}
+
+ol li ul li:hover {
+    color: royalblue;
+}
+
+/* Hover effect for the ordered list items */
+ol li:hover {
+    color: royalblue;
+    /* Change text color to gold on hover */
+    cursor: pointer;
+    /* Change cursor to indicate interaction */
+}
+
+
+.images {
+    display: flex;
+    /* Set .images as a flex container */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+    padding: 15px;
+    height: 100vh;
+    /* Optional: Ensure it takes full height to center vertically */
+    margin: 15px;
+}
+
+.images img {
+    margin: 50px;
+    /* Add margin around each image */
+    max-width: 100%;
+    /* Limit image width to 45% to fit two images side by side */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    border: 3px solid black;
+    /* Remove any space below the image */
+}
+
+.imgstat {
+    width: 100%;
+    display: flex;
+    /* Set .images as a flex container */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+}
+
+.imgstat img {
+    width: 100%;
+    /* Ensure the image stretches to fill the container */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+.imgtie {
+    display: flex;
+    /* Set .images as a flex container */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+}
+
+.imgtie img {
+    width: 500px;
+    /* Ensure the image stretches to fill the container */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+.navbar {
+    padding: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    background-color: black;
+    font-size: 22px;
+    border: 3px solid navy;
+    margin: 15px;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar2 {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    background-color: black;
+    font-size: 22px;
+    border: 3px solid navy;
+    margin: 15px;
+}
+
+.navbar2 a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar2 a:hover {
+    text-decoration: underline;
+}
+
+.videos {
+    padding: 15px;
+}
+
+.videos iframe {
+    display: flex;
+    /* Set .images as a flex container */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+
+.tableauPlaceholder {
+    width: 80%;                /* Limits the width of the Tableau placeholder to 80% of the page */
+    max-width: 1000px;         /* Prevents the Tableau from getting too wide */
+    height: auto;              /* Makes the height adjust automatically */
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center;   /* Centers the content horizontally */
+    align-items: center;       /* Centers the content vertically */
+    margin-left: 210px;              /* Adds space around the content */
+             /* Takes up the full height of the viewport */   /* Stacks the content vertically */
+}
